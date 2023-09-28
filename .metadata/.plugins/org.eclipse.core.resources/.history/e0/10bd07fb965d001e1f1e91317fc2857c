@@ -1,0 +1,21 @@
+package Views;
+
+import Controllers.EmpleadoController;
+
+public class EmpleadoView {
+
+	
+	public static void main(String[] args) {
+
+		String usuario = new EmpleadoController().createEmpleado("Cabanillas", "Andres",18,"Masculino",1200);
+		//String usuario = new UsuarioController().createUsuario("Silverio", "Villanueva","Perú");
+		//String usuario = new UsuarioController().createUsuario("Carlos", "Caceres","Argentina");
+		
+		//String usuario = new UsuarioController().deleteUsuario(2);
+		
+		//String usuario = new UsuarioController().updateUsuario(1, "Angel");
+		
+		//String usuario = new EmpleadoController().getEmpleado(2);
+		System.out.println(usuario);
+	}
+}
